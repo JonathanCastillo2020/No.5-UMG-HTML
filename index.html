@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SOUNDGT</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous"> -->
+		<style>
+			ul {
+				  list-style-type: none;
+				  margin: 1cm;
+				  padding: 0.5cm;
+				  overflow: hidden;
+				  background-color: #008080;
+				}
+
+			li {
+			  float: left;
+				}
+
+			li a {
+			  display: black;
+			  color: floralwhite;
+			  text-align: right;
+			  padding: 40px 40px;
+			  text-decoration: none;
+				}
+
+			li a:hover {
+			  background-color: #111;
+				}
+			</style>
+<!-- CARRUSEL DE FOTOS -->
+			<style>
+				.slide {
+				position: relative;
+				box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+				margin-top: 26px;
+			}
+
+			.slide-inner {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				height: calc( 300px + 10em);
+			}
+			.slide-open:checked + .slide-item {
+				position: static;
+				opacity: 100;
+			}
+
+
+			.slide-item {
+				position: absolute;
+				opacity: 0;
+				-webkit-transition: opacity 0.6s ease-out;
+				transition: opacity 0.6s ease-out;
+			}
+
+			.slide-item img {
+				display: block;
+				height: auto;
+				max-width: 100%;
+			}
+
+			.slide-control {
+				background: rgba(0, 0, 0, 0.28);
+				border-radius: 50%;
+				color: #fff;
+				cursor: pointer;
+				display: none;
+				font-size: 40px;
+				height: 40px;
+				line-height: 35px;
+				position: absolute;
+				top: 50%;
+				-webkit-transform: translate(0, -50%);
+				cursor: pointer;
+				-ms-transform: translate(0, -50%);
+				transform: translate(0, -50%);
+				text-align: center;
+				width: 40px;
+				z-index: 10;
+			}
+
+			.slide-control.prev {
+				left: 2%;
+			}
+
+			.slide-control.next {
+				right: 2%;
+			}
+
+			.slide-control:hover {
+				background: rgba(0, 0, 0, 0.8);
+				color: #aaaaaa;
+			}
+
+			#slide-1:checked ~ .control-1,
+			#slide-2:checked ~ .control-2,
+			#slide-3:checked ~ .control-3 {
+				display: block;
+			}
+
+			.slide-indicador {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				bottom: 2%;
+				left: 0;
+				right: 0;
+				text-align: center;
+				z-index: 10;
+			}
+
+			.slide-indicador li {
+				display: inline-block;
+				margin: 0 5px;
+			}
+
+			.slide-circulo {
+				color: #828282;
+				cursor: pointer;
+				display: block;
+				font-size: 35px;
+			}
+
+			.slide-circulo:hover {
+				color: #aaaaaa;
+			}
+
+			#slide-1:checked ~ .control-1 ~ .slide-indicador 
+			 	li:nth-child(1) .slide-circulo,
+			#slide-2:checked ~ .control-2 ~ .slide-indicador 
+			 	 li:nth-child(2) .slide-circulo,
+			#slide-3:checked ~ .control-3 ~ .slide-indicador 
+			 	 li:nth-child(3) .slide-circulo {
+				color: #428bca;
+			}
+
+			#titulo {
+				width: 100%;
+				position: absolute;
+				padding: 0px;
+				margin: 0px auto;
+				text-align: center;
+				font-size: 27px;
+				color: rgba(255, 255, 255, 1);
+				font-family: 'Open Sans', sans-serif;
+				z-index: 9999;
+				text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+			 	    -1px 0px 2px rgba(255, 255, 255, 0);
+			}
+			</style>
+			</head>
+			
+		</style>
+	</head>
+	<body>
+		<marquee BGCOLOR =	#008080>
+			<br>
+			0901-22-8408 | Jonathan Castillo 
+			<br>
+		</marquee>
+			<hr>
+		<h1 text align="center">SOUNDGT El mejor sonido de Guate <hr></h1>	
+
+		<body style="background-color: #C0C0C0">
+
+			<header class="header">
+				<div class="container-fluid px-lg-5">
+					<nav class="py-4">
+						<label for= "drop"></label>
+						<ins tyre="checkbox" id = "drop"></ins>
+						<ul class="#">
+							<li class="active"> <a href="index.html">Inicio</a></li>
+
+							<li class="active"> <a href="Menu/menu_quienessomos.html">Quienes Somos</a></li>
+
+							<li class="active"> <a href="Menu/menu_visionmision.html">Misión y Visión</a></li>
+
+							<li class="active"> <a href="Menu/menu_nuestrosprd.html">Nuestros Productos</a></li>
+
+							<li class="active"> <a href="Menu/menu_nuestrosprv.html">Nuestros Proveedores</a></li>
+
+							<li class="active"> <a href="Menu/menu_nuestroscli.html">Nuestros Clientes</a></li>
+							
+							<li class="active"> <a href="Menu/menu_contactenos.html">Contáctenos</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+		</body>
+</header>
+
+		</body>
+			<p>
+				<h4>
+					
+						<br>
+						<hr>
+						<h6>
+							<h3>
+
+								Música de compañía 
+							</h3>
+							<h6>
+								(opcional)
+								<br>
+
+							</h6>
+							<button onclick="playAudio()" type="button">Play </button>
+							<button onclick="pauseAudio()" type="button">Pause </button><br> 
+
+								<br>
+								<audio id="myAudio" width="240" height="360" loop>
+								  <source src="Multimedia/y2mate.com - La Vida en Rosa  Instrumental.mp3" type="audio/mp3">
+								  <source src="Multimedia/y2mate.com - La Vida en Rosa  Instrumental.mp3" type="audio/ogg">
+								  
+								</audio>
+
+								<script> 
+								var audio = document.getElementById("myAudio"); 
+
+								function playAudio() { 
+
+									audio.autoplay = true;
+								  audio.play(); 
+								} 
+
+								function pauseAudio() { 
+								  audio.pause(); 
+								} 
+								</script> 
+
+								<p>Música de:<a href="https://www.youtube.com/watch?v=w8eweYJ7f90&ab_channel=EnriqueHernandezMartinez-Topic" target="_blank"> La Vie en Rose</a>.</p>
+								
+
+						</h6>
+						<br>
+						<div style="text-align: center;">
+						<h4>
+								La presente pagina web se desarrollo para el proyecto no.5
+								<br>
+								de la clase de introducción a sistemas, en cual se indicó
+								sobre la creción de una empresa así tambien elaborar sus productos,
+								<br>
+								proveedores y demás para la estructura de dicha web. Procediendo a 
+								encontrar un servidor web gratuito para la calificación de la misma.
+							<br>
+						</div>
+							<div>
+								<div class="slide">
+									<div class="slide-inner">
+										<input class="slide-open" type="radio" id="slide-1" 
+			 	     					name="slide" aria-hidden="true" hidden="" checked="checked">
+											<div class="slide-item">
+													<img src="Multimedia/umg 2.png" width= 80000 height= 10>
+											</div>
+										<input class="slide-open" type="radio" id="slide-2" 
+			 	     					name="slide" aria-hidden="true" hidden="">
+											<div class="slide-item">
+												<img src="Multimedia/umg.png" width= 10000 height= 10>
+											</div>
+										<input class="slide-open" type="radio" id="slide-3" 
+			 	     					name="slide" aria-hidden="true" hidden="">
+											<div class="slide-item">
+												<img src="Multimedia/umg_cite (2).png" width= 10000 height= 10>
+											</div>	
+												<label for="slide-3" class="slide-control prev control-1">‹</label>
+												<label for="slide-2" class="slide-control next control-1">›</label>
+												<label for="slide-1" class="slide-control prev control-2">‹</label>
+												<label for="slide-3" class="slide-control next control-2">›</label>
+												<label for="slide-2" class="slide-control prev control-3">‹</label>
+												<label for="slide-1" class="slide-control next control-3">›</label>
+											<ol class="slide-indicador">
+												<li>
+													<label for="slide-1" class="slide-circulo">•</label>
+												</li>
+												<li>
+													<label for="slide-2" class="slide-circulo">•</label>
+												</li>
+												<li>
+													<label for="slide-3" class="slide-circulo">•</label>
+												</li>
+											</ol>
+									</div>
+								</div>
+							</div>
+						<!-- <div style="text-align: center;">
+							<br>
+							<img src="Multimedia/umg_cite.png" width= 562.5 height= 314.75 >
+						</div>
+ -->
+
+						<div id ="columna1">
+								<h4 style="text-align: center">
+									Por lo cual se desarrollo esta pequeña web sobre una empresa
+									de ventas de equipos de audio y sus multiples accesorias, llamada SOUNDGT
+
+								</h4>
+							</div>
+						</div>
+				</h4>
+				<h3>
+				<br></br>
+					<br>
+						Nuestras redes sociales:
+
+						<a href="https://twitter.com"> TWITTER</a>
+						<img src="Multimedia/twitter.png" alt = Twitter width="50" height="50">  
+						<a href="https://facebook.com"> FACEBOOK</a>
+						<img src="Multimedia/facebook.png" alt = Facebook width="50" height="50" > 
+						<a href="https://instagram.com"> INSTAGRAM</a>
+						<img src="Multimedia/instagram.png" alt = Instagram width="50" height="50" > 
+						<a href="https://www.youtube.com/watch?v=ZMOxzHkN1hc"> Video tutorial</a>
+						<img src="Multimedia/youtube.png" alt = Video width="50" height="50" > 
+
+						<a href="Menu/Egrafia.html"> Egrafía</a>
+						<img src="Multimedia/notas.png" alt = Video width="50" height="50" > 
+						<hr>
+						<br>
+							
+				</h3>
+				<h5>
+					<marquee BGCOLOR =	#008080 > UMG 	<p>Conoceréis la verdad y la verdad os hará libres.
+							<p> Desde 29 enero 1966 </marquee hspace>
+				</h5>
+			</p>
+	</body>
+</html>

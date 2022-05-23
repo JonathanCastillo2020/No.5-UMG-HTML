@@ -1,0 +1,69 @@
+html,
+<style>
+ul {
+				  list-style-type: none;
+				  margin: 1cm;
+				  padding: 0.5cm;
+				  overflow: hidden;
+				  background-color: #008080;
+				}
+
+			li {
+			  float: left;
+				}
+
+			li a {
+			  display: black;
+			  color: floralwhite;
+			  text-align: right;
+			  padding: 40px 40px;
+			  text-decoration: none;
+				}
+
+			li a:hover {
+			  background-color: #111;
+				}
+nav .menu li a: hover {
+	color: #ff4c4c;
+</style>
+}
+
+*{
+margin:0;
+padding:0;
+}
+#columna1 {
+position:center;
+top:100px;
+left:100px;
+width:200px;
+margin-top:100px;
+background-color:none;
+}
+#columna2 {
+margin-left:220px;
+margin-right:20px;
+margin-top:10px;
+background-color:none;
+}
+
+/*#redes_sociales {
+	<h4>
+	
+	Nuestras redes sociales:
+						a href = "https://twitter.com"> TWITTER a
+						<a href="https://twitter.com"> TWITTER</a>
+						<img src="Multimedia/twitter.png" alt = Twitter width="50" height="50">  
+						<a href="https://facebook.com"> FACEBOOK</a>
+						<img src="Multimedia/facebook.png" alt = Facebook width="50" height="50" > 
+						<a href="https://instagram.com"> INSTAGRAM</a>
+						<img src="Multimedia/instagram.png" alt = Instagram width="50" height="50" > 
+						<a href="https://www.youtube.com/watch?v=ZMOxzHkN1hc"> Video tutorial</a>
+						<img src="Multimedia/youtube.png" alt = Video width="50" height="50" > 
+
+						<a href="Egrafia.html"> Egrafía</a>
+						<img src="Multimedia/notas.png" alt = Video width="50" height="50" > 
+						<hr>
+						<br>
+	</h4>
+}*/

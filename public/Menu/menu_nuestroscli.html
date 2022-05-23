@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nuestros Clientes</title>
+	<!--  -->
+	<link rel="stylesheet" type="text/css" href="Menu/menu_quienessomos.html">
+	<link rel="stylesheet" type="text/css" href="Menu/menu_nuestroscli.html">
+	<link rel="stylesheet" type="text/css" href="Menu/menu_nuestrosprd.html">
+	<link rel="stylesheet" type="text/css" href="Menu/menu_nuestrosprv.html">
+	<link rel="stylesheet" type="text/css" href="Menu/menu_contactenos.html">
+	<link rel="stylesheet" type="text/css" href="Menu/egrafia.html">
+		<style>
+			ul {
+				  list-style-type: none;
+				  margin: 1cm;
+				  padding: 0.5cm;
+				  overflow: hidden;
+				  background-color: #008080;
+				}
+
+			li {
+			  float: left;
+				}
+
+			li a {
+			  display: black;
+			  color: floralwhite;
+			  text-align: right;
+			  padding: 40px 40px;
+			  text-decoration: none;
+				}
+
+			li a:hover {
+			  background-color: #111;
+				}
+			</style>
+	</head>
+	<body>
+		<marquee BGCOLOR =	#008080>0901-22-8408 | Jonathan Castillo 
+			<hr>
+		</marquee>
+		<hr>
+		<h1 text align="center">SOUNDGT El mejor sonido de Guate <hr></h1>
+
+		<body style="background-color: #C0C0C0">
+
+			<header class="header">
+				<div class="container-fluid px-lg-5">
+					<nav class="py-4">
+						<label for= "drop"></label>
+						<ins tyre="checkbox" id = "drop"></ins>
+						<ul class="#">
+							<li class="active"> <a href="D:/U/UMG/1er/Introduccion%20Sistemas%20de%20Computo/Proyecto%205/HTML/index.html">Inicio</a></li>
+
+							<li class="active"> <a href="menu_quienessomos.html">Quienes Somos</a></li>
+
+							<li class="active"> <a href="menu_visionmision.html">Misión y Visión</a></li>
+
+							<li class="active"> <a href="menu_nuestrosprd.html">Nuestros Productos</a></li>
+
+							<li class="active"> <a href="menu_nuestrosprv.html">Nuestros Proveedores</a></li>
+
+							<li class="active"> <a href="menu_nuestroscli.html">Nuestros Clientes</a></li>
+							
+							<li class="active"> <a href="menu_contactenos.html">Contáctenos</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+		</body>
+</header>
+
+		</body>
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+					<style>
+					* {
+					  box-sizing: border-box;
+					}
+
+					body {
+					  margin: 0;
+					  font-family: Arial;
+					}
+
+					/* The grid: Four equal columns that floats next to each other */
+					/*Diseño de columnas*/
+					.column {
+					  float: left;
+					  width: 25%;
+					  padding: 10px;
+					}
+
+					/* Style the images inside the grid */
+					/*Diseño de las imágenes*/
+					.column img {
+					  opacity: 0.8; 
+					  cursor: pointer; 
+					}
+
+					.column img:hover {
+					  opacity: 1;
+					}
+
+					/* Clear floats after the columns */
+					/*Función al terminar cada columna*/
+					.row:after {
+					  content: "";
+					  display: table;
+					  clear: both;
+					}
+
+					/* The expanding image container */
+					/*Contenedor*/
+					.container {
+					  position: relative;
+					  display: none;
+					}
+
+					/* Expanding image text */
+					/*Texto en las imágenes*/
+					#imgtext {
+					  position: absolute;
+					  bottom: 15px;
+					  left: 15px;
+					  color: white;
+					  font-size: 20px;
+					}
+
+					/* Closable button inside the expanded image */
+					/*Boton para cerrar*/
+					.closebtn {
+					  position: absolute;
+					  top: 10px;
+					  right: 15px;
+					  color: white;
+					  font-size: 35px;
+					  cursor: pointer;
+					}
+					</style>
+					</head>
+					<body>
+
+					<div style="text-align:center">
+					  <h2>Tabla de imágenes</h2>
+					  <p>Presiona cada imágen</p>
+					</div>
+
+					<!-- The four columns -->
+					<!-- Columnas -->
+					<div class="row">
+					  <div class="column">
+					    <img src= "D:\U\UMG\1er\Introduccion Sistemas de Computo\Proyecto 5\HTML\Multimedia\intelaf.jpg" alt="INTELAF" style="width:100%" onclick="myFunction(this);">
+					  </div>
+					  <div class="column">
+					    <img src= "D:\U\UMG\1er\Introduccion Sistemas de Computo\Proyecto 5\HTML\Multimedia\MAX.jpg" alt="MAX DISTELSA" style="width:100%" onclick="myFunction(this);">
+					  </div>
+					  <div class="column">
+					    <img src= "D:\U\UMG\1er\Introduccion Sistemas de Computo\Proyecto 5\HTML\Multimedia\Siman_1-1.jpg" alt="SIMAN" style="width:100%" onclick="myFunction(this);">
+					  </div>
+
+					  <div class="column">
+					    <img src= "D:\U\UMG\1er\Introduccion Sistemas de Computo\Proyecto 5\HTML\Multimedia\steren.jpg" alt="STEREN" style="width:100%" onclick="myFunction(this);">
+					  </div>
+					</div>
+
+					<div class="container">
+					  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					  <img id="expandedImg" style="width:100%">
+					  <div id="imgtext"></div>
+					</div>
+
+					<script>
+					function myFunction(imgs) {
+					  var expandImg = document.getElementById("expandedImg");
+					  var imgText = document.getElementById("imgtext");
+					  expandImg.src = imgs.src;
+					  imgText.innerHTML = imgs.alt;
+					  expandImg.parentElement.style.display = "block";
+					}
+					</script>
+
+					</body>
+
+				<br>
+				<br>
+				<br>
+						<a href="https://twitter.com"> TWITTER</a>
+						<img src="https://cdn-icons-png.flaticon.com/512/466/466963.png" alt = Twitter width="50" height="50">  
+						<a href="https://facebook.com"> FACEBOOK</a>
+						<img src="https://cdn-icons-png.flaticon.com/512/747/747374.png" alt = Facebook width="50" height="50" > 
+						<a href="https://instagram.com"> INSTAGRAM</a>
+						<img src="https://cdn-icons-png.flaticon.com/512/725/725339.png" alt = Instagram width="50" height="50" > 
+						<a href="https://www.youtube.com/watch?v=ZMOxzHkN1hc"> Video tutorial</a>
+						<img src="https://cdn-icons-png.flaticon.com/512/725/725361.png" alt = Video width="50" height="50" > 
+
+						<a href="Egrafia.html"> Egrafía</a>
+						<img src="https://cdn-icons-png.flaticon.com/512/768/768818.png" alt = Video width="50" height="50" > 
+						<hr>
+						<br>
+							<marquee BGCOLOR =	#008080 Vspace = 40> UMG 	<p>Conoceréis la verdad y la verdad os hará libres.
+							</marquee hspace>
+							<center>
+								<marquee BGCOLOR = #008080> Desde 29 enero 1966 
+								</marquee>
+							</center>
+				</h6>
+			</p>
+	</body>
+</html>

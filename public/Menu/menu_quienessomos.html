@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quienes somos</title>
+<!--  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous"> -->
+		<style>
+			ul {
+				  list-style-type: none;
+				  margin: 1cm;
+				  padding: 0.5cm;
+				  overflow: hidden;
+				  background-color: #008080;
+				}
+
+			li {
+			  float: left;
+				}
+
+			li a {
+			  display: black;
+			  color: floralwhite;
+			  text-align: right;
+			  padding: 40px 40px;
+			  text-decoration: none;
+				}
+
+			li a:hover {
+			  background-color: #111;
+				}
+			</style>
+			</head>
+			
+<!-- CARRUSEL DE FOTOS -->
+			<style>
+				.slide {
+				position: relative;
+				box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+				margin-top: 26px;
+			}
+
+			.slide-inner {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				height: calc( 500px + 10em);
+			}
+			.slide-open:checked + .slide-item {
+				position: static;
+				opacity: 100;
+			}
+
+
+			.slide-item {
+				position: absolute;
+				opacity: 0;
+				-webkit-transition: opacity 0.6s ease-out;
+				transition: opacity 0.6s ease-out;
+			}
+
+			.slide-item img {
+				display: block;
+				height: auto;
+				max-width: 100%;
+			}
+
+			.slide-control {
+				background: rgba(0, 0, 0, 0.28);
+				border-radius: 50%;
+				color: #fff;
+				cursor: pointer;
+				display: none;
+				font-size: 40px;
+				height: 40px;
+				line-height: 35px;
+				position: absolute;
+				top: 50%;
+				-webkit-transform: translate(0, -50%);
+				cursor: pointer;
+				-ms-transform: translate(0, -50%);
+				transform: translate(0, -50%);
+				text-align: center;
+				width: 40px;
+				z-index: 10;
+			}
+
+			.slide-control.prev {
+				left: 2%;
+			}
+
+			.slide-control.next {
+				right: 2%;
+			}
+
+			.slide-control:hover {
+				background: rgba(0, 0, 0, 0.8);
+				color: #aaaaaa;
+			}
+
+			#slide-1:checked ~ .control-1,
+			#slide-2:checked ~ .control-2,
+			#slide-3:checked ~ .control-3 {
+				display: block;
+			}
+
+			.slide-indicador {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				bottom: 2%;
+				left: 0;
+				right: 0;
+				text-align: center;
+				z-index: 10;
+			}
+
+			.slide-indicador li {
+				display: inline-block;
+				margin: 0 5px;
+			}
+
+			.slide-circulo {
+				color: #828282;
+				cursor: pointer;
+				display: block;
+				font-size: 35px;
+			}
+
+			.slide-circulo:hover {
+				color: #aaaaaa;
+			}
+
+			#slide-1:checked ~ .control-1 ~ .slide-indicador 
+			 	li:nth-child(1) .slide-circulo,
+			#slide-2:checked ~ .control-2 ~ .slide-indicador 
+			 	 li:nth-child(2) .slide-circulo,
+			#slide-3:checked ~ .control-3 ~ .slide-indicador 
+			 	 li:nth-child(3) .slide-circulo {
+				color: #428bca;
+			}
+
+			#titulo {
+				width: 100%;
+				position: absolute;
+				padding: 0px;
+				margin: 0px auto;
+				text-align: center;
+				font-size: 27px;
+				color: rgba(255, 255, 255, 1);
+				font-family: 'Open Sans', sans-serif;
+				z-index: 9999;
+				text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+			 	    -1px 0px 2px rgba(255, 255, 255, 0);
+			}
+			</style>
+			</head>			
+		</style>
+	</head>
+	<body>
+		<marquee BGCOLOR =	#008080>
+			<br>
+			0901-22-8408 | Jonathan Castillo 
+			<br>
+		</marquee>
+			<hr>
+		<h1 text align="center">SOUNDGT El mejor sonido de Guate <hr></h1>	
+
+		<body style="background-color: #C0C0C0">
+
+			<header class="header">
+				<div class="container-fluid px-lg-5">
+					<nav class="py-4">
+						<label for= "drop"></label>
+						<ins tyre="checkbox" id = "drop"></ins>
+						<ul class="#">
+							<li class="active"> <a href="D:/U/UMG/1er/Introduccion%20Sistemas%20de%20Computo/Proyecto%205/HTML/index.html">Inicio</a></li>
+
+							<li class="active"> <a href="menu_quienessomos.html">Quienes Somos</a></li>
+
+							<li class="active"> <a href="menu_visionmision.html">Misión y Visión</a></li>
+
+							<li class="active"> <a href="menu_nuestrosprd.html">Nuestros Productos</a></li>
+
+							<li class="active"> <a href="menu_nuestrosprv.html">Nuestros Proveedores</a></li>
+
+							<li class="active"> <a href="menu_nuestroscli.html">Nuestros Clientes</a></li>
+							
+							<li class="active"> <a href="menu_contactenos.html">Contáctenos</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+		</body>
+</header>
+
+		<body>
+					<div>
+								<div class="slide">
+									<div class="slide-inner">
+										<input class="slide-open" type="radio" id="slide-1" 
+			 	     					name="slide" aria-hidden="true" hidden="" checked="checked">
+											<div id = "slide - 1" class="slide-item">
+													<img src="D:\U\UMG\1er\Introduccion Sistemas de Computo\Proyecto 5\HTML\Multimedia\Quienes somos.jpg" width= 80000 height= 10>
+											</div>
+										<input class="slide-open" type="radio" id="slide-2" 
+			 	     					name="slide" aria-hidden="true" hidden="">
+											<div id= "slide-2" class="slide-item">
+												<img src="D:\U\UMG\1er\Introduccion Sistemas de Computo\Proyecto 5\HTML\Multimedia\Quienes somos 1.jpg" width= 80000 height= 10>
+											</div>
+										<input class="slide-open" type="radio" id="slide-3" 
+			 	     					name="slide" aria-hidden="true" hidden="">
+											<div class="slide-item">
+												<img src="D:\U\UMG\1er\Introduccion Sistemas de Computo\Proyecto 5\HTML\Multimedia\Quienes somos 2.jpg" width= 10000 height= 10>
+											</div>	
+												<label for="slide-3" class="slide-control prev control-1">‹</label>
+												<label for="slide-2" class="slide-control next control-1">›</label>
+												<label for="slide-1" class="slide-control prev control-2">‹</label>
+												<label for="slide-3" class="slide-control next control-2">›</label>
+												<label for="slide-2" class="slide-control prev control-3">‹</label>
+												<label for="slide-1" class="slide-control next control-3">›</label>
+											<ol class="slide-indicador">
+												<li>
+													<label for="slide-1" class="slide-circulo">•</label>
+												</li>
+												<li>
+													<label for="slide-2" class="slide-circulo">•</label>
+												</li>
+												<li>
+													<label for="slide-3" class="slide-circulo">•</label>
+												</li>
+											</ol>
+									</div>
+								</div>
+							</div>
+			<p>
+				<h4>
+					
+						<br>
+						<hr>				
+						<a href="https://twitter.com"> TWITTER</a>
+						<img src="https://cdn-icons-png.flaticon.com/512/466/466963.png" alt = Twitter width="50" height="50">  
+						<a href="https://facebook.com"> FACEBOOK</a>
+						<img src="https://cdn-icons-png.flaticon.com/512/747/747374.png" alt = Facebook width="50" height="50" > 
+						<a href="https://instagram.com"> INSTAGRAM</a>
+						<img src="https://cdn-icons-png.flaticon.com/512/725/725339.png" alt = Instagram width="50" height="50" > 
+						<a href="https://www.youtube.com/watch?v=ZMOxzHkN1hc"> Video tutorial</a>
+						<img src="https://cdn-icons-png.flaticon.com/512/725/725361.png" alt = Video width="50" height="50" > 
+
+						<a href="Egrafia.html"> Egrafía</a>
+						<img src="https://cdn-icons-png.flaticon.com/512/768/768818.png" alt = Video width="50" height="50" > 
+						<hr>
+						<br>
+							<marquee BGCOLOR =	#008080 Behavior = alternate> UMG 	<p>Conoceréis la verdad y la verdad os hará libres.
+							<p> Desde 29 enero 1966 </marquee hspace>
+				</h6>
+			</p>
+	</body>
+</html>
