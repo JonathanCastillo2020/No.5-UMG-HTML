@@ -11,6 +11,24 @@
 	<link rel="stylesheet" type="text/css" href="Menu/egrafia.html">
 
 		<style>
+			.boton {
+				border: double;
+				color: white;
+				padding: 30px 64px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+			.colorboton {
+				background - color: "green"
+			}
+			
+			.colorboton2 {
+				background - color: "red"
+			}
 			ul {
 				  list-style-type: none;
 				  margin: 1cm;
@@ -86,8 +104,8 @@
 								
 								Nuestro producto mas vendido
 							</h2>
-							<button style = "center "onclick="playVid()" type="button">Play </button>
-							<button onclick="pauseVid()" type="button">Pause </button><br> 
+							<button class = "boton colorboton" style = "center "onclick="playVid()" type="button">Play </button>
+							<button class = "boton colorboton2"onclick ="pauseVid()" type="button">Pause </button><br> 
 
 								<video id="myVideo" width="1080" height="720"loop>
 
